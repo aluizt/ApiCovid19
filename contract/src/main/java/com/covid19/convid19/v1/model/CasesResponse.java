@@ -1,4 +1,4 @@
-package br.com.covid19.v1.model;
+package com.covid19.convid19.v1.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

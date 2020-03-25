@@ -1,4 +1,4 @@
-package br.com.covid19;
+package com.covid19.convid19;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package br.com.covid19.config;
+package com.covid19.convid19.config;
 
-import br.com.covid19.properties.IntegrationProperties;
+import com.covid19.convid19.properties.IntegrationProperties;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,14 +17,7 @@ public class IntegrationConfig {
 
     @Bean
     public WebClient webClient() {
-        return WebClient.builder()
-                .baseUrl(integrationProperties.getUrlApiDataBase())
-                .defaultHeaders(headers())
-                .build();
+        return WebClient.builder().build();
     }
-    private Consumer<HttpHeaders> headers() {
-        return httpHeaders -> {
-            httpHeaders.add(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE);
-        };
-    }
+
 }

@@ -2,7 +2,5 @@ rootProject.name = 'convid19'
 include 'contract'
 include 'impl'
 include 'integration'
-include 'contract'
-include 'impl'
-include 'integration'
+
 

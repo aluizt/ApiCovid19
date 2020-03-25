@@ -16,14 +16,14 @@ buildscript {
 }
 
 plugins {
-	id 'org.springframework.boot' version '2.2.5.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
 	id 'application'
+	id 'org.springframework.boot' version '2.2.5.RELEASE'
 	id "org.sonarqube" version "2.7"
 	id 'info.solidsoft.pitest' version '1.4.0' apply false
 }
 
+mainClassName = 'br.com.covid19.Convid19Application'
 
 
 dependencies {
@@ -41,7 +41,7 @@ allprojects {
 	apply plugin: 'java'
 	apply plugin: 'io.spring.dependency-management'
 
-	group = 'com.covid19'
+	group = 'br.com.covid19'
 	version = '1.0.0'
 	sourceCompatibility = JavaVersion.VERSION_11
 
@@ -66,7 +66,7 @@ allprojects {
 
 	dependencies {
 		implementation 'org.springframework.boot:spring-boot-starter-actuator'
-		implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+		//implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
 		implementation 'org.springframework.hateoas:spring-hateoas'
 		implementation 'org.springframework.boot:spring-boot-starter-webflux'
 

@@ -1,8 +1,7 @@
-package br.com.covid19.v1.mapper;
+package com.covid19.convid19.v1.mapper;
 
-import br.com.covid19.model.CasesOutput;
-import br.com.covid19.v1.model.CasesResponse;
-import io.netty.util.internal.ObjectUtil;
+import com.covid19.convid19.v1.model.CasesResponse;
+import com.covid19.convid19.model.CasesOutput;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import org.springframework.util.ObjectUtils;
